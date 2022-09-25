@@ -1,0 +1,199 @@
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+
+html{
+    font-size: 14px;
+    line-height: 1.2em;
+}
+
+
+a,
+p{
+    font-size: 17px;
+    color: aliceblue;
+}
+
+html,
+body {
+    height: 100%;
+    background: linear-gradient(to right, #00CED1, #FFD700);
+}
+
+
+
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+header{
+    margin-bottom: 50px;
+    width: 100%;
+    background-color: darkslategray;
+    text-align: center;
+    color: aliceblue;
+    padding: 20px;
+}
+
+.content{
+    min-height: calc(100vh - 40px);
+
+    
+}
+
+
+
+
+.carusel{
+    margin-bottom: 50px;
+}
+
+.caruselWrapper{
+    width: 100%;
+    height: 400px;
+    background-color: cornflowerblue;
+    margin-bottom: 15px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.caruselGalery{
+    overflow: hidden;
+    width: 700px;
+    border: 2px solid black;
+    
+}
+
+.caruselGaleryItems{
+    display: flex;
+    position: relative;
+    left: 0;
+    width: 2800px;
+    transition: all ease 1s;
+    background-color: darkslategray;
+  
+}
+
+.caruselGaleryItems > img{
+    display: none;
+}
+
+
+.caruselGaleryItems > img:first-child{
+    display: block;
+}
+
+
+.caruselBtn{
+    outline: none;
+    margin: 3px;
+    padding: 3px;
+    height: 80px;
+    border: none;
+    border-radius: 10%;
+    background-color: cornflowerblue;
+    font-weight: bold;
+    color: aliceblue;
+    transition: 0.6s ease;
+    cursor: pointer;
+    text-align: center;
+}
+
+.caruselBtn:hover{
+    background-color: aliceblue;
+    color: cornflowerblue;
+    transition: 0.6s ease;
+}
+
+
+
+.caruselDots{
+    width: 100%;
+    text-align: center;
+}
+
+.caruselDotsItem{
+    width: 10px;
+    height: 10px;
+    background-color: aliceblue;
+    cursor: pointer;
+    display: inline-block;
+    border-radius: 5px;
+    transition: 0.6s ease;
+}
+
+.caruselDotsItem_active,
+.caruselDotsItem:hover{
+    background-color: darkslategray;
+    transition: 0.6s ease;
+}
+
+
+.carusel_2 > .caruselWrapper{
+    background-color: darkgray;
+}
+
+.carusel_2 .caruselBtn{
+    background-color: darkgray;
+    border: 2px solid black;
+    color: black;
+}
+
+.carusel_2 .caruselBtn:hover{
+    background-color: aliceblue;
+}
+
+
+footer{
+    padding: 12px;
+    text-align: center;
+    background-color: darkslategray;
+    font-size: 14px;
+    color: aliceblue;
+    width: 100%;
+}
+
+
+
+
+@media (max-width: 700px) {
+    .container{
+        padding: 0 10px;
+
+    }
+    
+    .caruselWrapper{
+        height: 330px;
+    }
+
+    .caruselBtn{
+        height: 60px;
+    }
+    
+}
+
+
+@media (max-width: 470px) {
+    
+    .caruselWrapper{
+        height: 250px;
+    }
+    .caruselBtn{
+        height: 40px;
+    }
+    
+}
+
+
+
+
